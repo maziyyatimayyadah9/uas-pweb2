@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>CRUD AJAX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="active">
+				<h1><a href="index.html" class="logo">
+          Z
+        </a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="index.html"><span class="fa fa-home"></span> Beranda</a>
+          </li>
+          <li>
+              <a href="./add.html" id="tambah" ><span class="fa fa-user"></span> Tambah Data</a>
+          </li>
+          
+        </ul>
+
+        <div class="footer">
+        	<p>
+					  Zulfa Laptop | <script>document.write(new Date().getFullYear());</script> 
+					</p>
+        </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tambah"  href="./add.html">Tambah Data</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+        <div class= "container">
+                <div class="pt-5">
+                    <h3 class="text-center"><b>Tambah Data Laptop</b></h3>
+                </div>    
+                <div class="card mt-5">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Merk laptop</label>
+                                <input type="text" class="form-control" id ="merk_laptop" name ="merk_laptop" placeholder="Masukkan merk laptop..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nama">seri_laptop</label>
+                                <input type="text" class="form-control" id ="seri_laptop" name ="seri_laptop" placeholder="Masukkan seri laptop..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Tahun produksi">Tahun produksi</label>
+                                <input type="number" class="form-control" id ="tahun_produksi" name ="tahun_produksi" placeholder="Masukkan tahun produksi..." required>
+                            </div>
+
+                            <div class="card-footer text-right">
+                                <button type="button" class="btn btn-danger" onclick="history.back()">Batal</button>
+                                <button type="submit" name="submit" class="btn btn-success" value="SIMPAN" id="add">SIMPAN</button>
+                            </div>
+                            
+                        </div>  
+
+                </div>
+                
+            </div>
+        
+      </div>
+		</div>
+
+    <script src="./add.js"></script>
+    <!-- <script src="../js/jquery.min.js"></script> -->
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
+
+<body>
+    
+
+    
+
+
+
